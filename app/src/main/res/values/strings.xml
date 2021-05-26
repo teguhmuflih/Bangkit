@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PlantPest</string>
+    <string name="title_home">Home</string>
+    <string name="title_capture">Capture</string>
+    <string name="title_account">Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_picture_preview">Picture Preview</string>
+    <string name="txt_camera">Camera</string>
+    <string name="txt_setting">About Us</string>
+    <string name="txt_analyze">Analyze</string>
+    <string name="txt_pest_name">Pest Name</string>
+    <string name="txt_percentage">85%</string>
+    <string name="arrow">arrow</string>
+    <string name="txt_photo_result">photo_result</string>
+    <string name="icon_app">icon app</string>
+    <string name="bt_gallery">Gallery</string>
+</resources>

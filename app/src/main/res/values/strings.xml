@@ -15,4 +15,5 @@
     <string name="txt_photo_result">photo_result</string>
     <string name="icon_app">icon app</string>
     <string name="bt_gallery">Gallery</string>
+    <string name="logo">Logo</string>
 </resources>

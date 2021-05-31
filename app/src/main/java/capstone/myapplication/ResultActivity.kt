@@ -5,6 +5,7 @@ import android.graphics.BitmapFactory
 import android.graphics.Matrix
 import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -45,7 +46,10 @@ class ResultActivity : AppCompatActivity() {
         //val bOutput = Bitmap.createBitmap(bmp, 0, 0, bmp.width, bmp.height, matrix, true)
 
         //binding.viewResult.setImageBitmap(bmp)
-        binding.viewResult.setImageURI(dataIntent)
+        //binding.viewResult.setImageURI(dataIntent)
+        val bitmapPhoto = MediaStore.Images.Media.getBitmap(this.contentResolver, dataIntent)
+
+        binding.viewResult.setImageBitmap(bitmapPhoto)
         setData(data)
     }
 

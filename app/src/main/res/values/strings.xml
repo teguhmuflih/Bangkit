@@ -3,7 +3,6 @@
     <string name="title_home">Home</string>
     <string name="title_capture">Capture</string>
     <string name="title_account">Account</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="txt_picture_preview">Picture Preview</string>
     <string name="txt_camera">Camera</string>
@@ -16,4 +15,12 @@
     <string name="icon_app">icon app</string>
     <string name="bt_gallery">Gallery</string>
     <string name="logo">Logo</string>
+    <string name="pest_solution">Pest Solution</string>
+    <string name="pest_on">Pest on</string>
+    <string name="detection_result">Detection Result</string>
+    <string name="icon_result">Icon Result</string>
+    <string name="name_pest">Name Pest</string>
+    <string name="icon_solution">Icon Solution</string>
+    <string name="solution">Solution</string>
+    <string name="image_result">Image result</string>
 </resources>

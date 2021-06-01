@@ -1,23 +1,15 @@
-package capstone.myapplication
+package capstone.myapplication.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.NavigationUI.setupWithNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import capstone.myapplication.bottomNav.camera.CameraFragment
-import capstone.myapplication.bottomNav.Home.HomeFragment
-import capstone.myapplication.bottomNav.profile.ProfileFragment
-import capstone.myapplication.data.DataDummy
-import capstone.myapplication.data.DataEntity
+import capstone.myapplication.R
 import capstone.myapplication.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 

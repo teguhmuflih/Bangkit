@@ -33,6 +33,11 @@ android {
     }
     buildFeatures {
         viewBinding true
+        mlModelBinding true
+    }
+    aaptOptions {
+        noCompress "tflite"
+        noCompress "lite"
     }
 }
 
@@ -50,6 +55,9 @@ dependencies {
     implementation 'com.github.dhaval2404:imagepicker-support:1.7.1'
     //implementation 'com.android.support:appcompat-v7:25.1.0'
     //implementation 'com.android.support:design:25.1.0'
+    implementation 'org.tensorflow:tensorflow-lite:+'
+    implementation 'org.tensorflow:tensorflow-lite-task-vision:0.2.0'
+    implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'

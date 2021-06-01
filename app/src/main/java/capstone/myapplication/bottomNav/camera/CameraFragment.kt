@@ -1,28 +1,16 @@
 package capstone.myapplication.bottomNav.camera
 
-import android.Manifest
 import android.app.Activity
 import android.content.Intent
-import android.content.pm.PackageManager
-import android.graphics.Bitmap
-import android.os.Build
 import android.os.Bundle
-import android.os.Environment
-import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.core.content.FileProvider
-import androidx.core.content.PermissionChecker.checkSelfPermission
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import capstone.myapplication.R
-import capstone.myapplication.ResultActivity
+import capstone.myapplication.view.ResultActivity
 import capstone.myapplication.databinding.FragmentCameraBinding
 import com.github.dhaval2404.imagepicker.ImagePicker
-import java.io.ByteArrayOutputStream
-import java.io.File
 
 class CameraFragment : Fragment() {
 

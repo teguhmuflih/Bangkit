@@ -1,9 +1,10 @@
-package capstone.myapplication
+package capstone.myapplication.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import capstone.myapplication.R
 
 @Suppress("DEPRECATION")
 class SplashScreenActivity : AppCompatActivity() {

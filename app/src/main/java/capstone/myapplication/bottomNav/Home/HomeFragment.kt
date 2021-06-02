@@ -2,6 +2,7 @@ package capstone.myapplication.bottomNav.Home
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -22,6 +23,7 @@ import android.widget.SimpleAdapter
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.FragmentActivity
 import capstone.myapplication.BuildConfig
 import capstone.myapplication.R
 import capstone.myapplication.databinding.FragmentHomeBinding
@@ -40,6 +42,7 @@ class HomeFragment : Fragment(), AdapterView.OnItemClickListener {
     private lateinit var locationManager: LocationManager
     private lateinit var binding: ItemWeatherBinding
     private lateinit var homeBinding: FragmentHomeBinding
+    private var mContext: Context? = null
     private lateinit var cityName: String
     private lateinit var aqi: String
     private lateinit var adapter: SimpleAdapter
@@ -53,6 +56,14 @@ class HomeFragment : Fragment(), AdapterView.OnItemClickListener {
 
     companion object{
         private var city = " "
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        /*if (context is Activity) {
+            this.listener = context as HomeFragment
+        }*/
+        mContext = context
     }
 
     override fun onCreateView(
@@ -100,13 +111,15 @@ class HomeFragment : Fragment(), AdapterView.OnItemClickListener {
 
     private val locationListener: LocationListener = object : LocationListener {
         override fun onLocationChanged(location: Location) {
-            val geocoder = Geocoder(requireActivity(), Locale.getDefault())
-            val addresses = geocoder.getFromLocation(location.latitude, location.longitude, 1)
-            //cityName = addresses[0].adminArea
-            cityName = addresses[0].subLocality
-            //Toast.makeText(context, cityName, Toast.LENGTH_SHORT).show()
-            //Log.d("HomeFragment", cityName)
-            getParams(cityName)
+            if (mContext != null){
+                val geocoder = Geocoder(mContext, Locale.getDefault())
+                val addresses = geocoder.getFromLocation(location.latitude, location.longitude, 1)
+                //cityName = addresses[0].adminArea
+                cityName = addresses[0].subLocality
+                //Toast.makeText(context, cityName, Toast.LENGTH_SHORT).show()
+                //Log.d("HomeFragment", cityName)
+                getParams(cityName)
+            }
         }
         override fun onStatusChanged(provider: String, status: Int, extras: Bundle) {}
         override fun onProviderEnabled(provider: String) {}
@@ -332,6 +345,11 @@ class HomeFragment : Fragment(), AdapterView.OnItemClickListener {
             return "Very Poor"
         }
         return "null"
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        mContext = null
     }
 
 

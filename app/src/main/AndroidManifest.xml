@@ -3,7 +3,9 @@
     package="capstone.myapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +15,7 @@
         android:roundIcon="@mipmap/botanic"
         android:supportsRtl="true"
         android:theme="@style/Theme.PlantPest">
+        <activity android:name=".view.ArticleActivity"></activity>
         <activity
             android:name=".view.ResultActivity"
             android:screenOrientation="portrait"
@@ -20,10 +23,10 @@
         <activity
             android:name=".view.MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.PlantPest.NoActionBar"/>
-            <activity
-                android:name=".view.SplashScreenActivity"
-                android:theme="@style/Theme.PlantPest.NoActionBar">
+            android:theme="@style/Theme.PlantPest.NoActionBar" />
+        <activity
+            android:name=".view.SplashScreenActivity"
+            android:theme="@style/Theme.PlantPest.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

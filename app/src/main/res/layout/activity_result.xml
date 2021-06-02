@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@color/white"
-            app:layout_scrollFlags="scroll|enterAlways"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:titleTextColor="#FFFFFF">
 

@@ -23,4 +23,15 @@
     <string name="icon_solution">Icon Solution</string>
     <string name="solution">Solution</string>
     <string name="image_result">Image result</string>
+    <string name="temperature">0</string>
+    <string name="txt_temp">°C</string>
+    <string name="img_weather">Image Weather</string>
+    <string name="location"> </string>
+    <string name="txt_air_quality">Air Quality:</string>
+    <string name="air_quality"> </string>
+    <string name="txt_humidity">Humidity</string>
+    <string name="humidity">0%</string>
+    <string name="weather_type">Weather Type</string>
+    <string name="title_article">Title Article</string>
+    <string name="date_article">Date Article</string>
 </resources>

@@ -18,7 +18,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="?attr/colorPrimary"
+            android:background="@color/green_dark"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:titleTextColor="#FFFFFF">
@@ -26,9 +26,9 @@
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="40dp"
-                android:src="@drawable/botanic"
                 android:layout_marginEnd="10dp"
-                android:contentDescription="@string/icon_app" />
+                android:contentDescription="@string/icon_app"
+                android:src="@drawable/botanic" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/toolbarTitle"

@@ -13,6 +13,7 @@ import java.util.*
 import kotlin.Comparator
 import kotlin.collections.ArrayList
 
+@Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 class Classifier(assetManager: AssetManager, modelPath: String, labelPath: String, inputSize: Int) {
     private var interpreter: Interpreter
     private var lableList: List<String>

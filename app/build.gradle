@@ -45,6 +45,7 @@ android {
         it.buildConfigField "String", "URL_POLLUTION", baseUrlPollution
         it.buildConfigField "String", "URL_ICON", baseUrlIcon
     }
+    ndkVersion '22.1.7171670'
 }
 
 dependencies {
@@ -64,8 +65,10 @@ dependencies {
     implementation 'org.tensorflow:tensorflow-lite:+'
     implementation 'org.tensorflow:tensorflow-lite-task-vision:0.2.0'
     implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
+
     //loopj
     implementation 'com.loopj.android:android-async-http:1.4.11'
+
     //glide
     implementation 'com.github.bumptech.glide:glide:4.11.0'
 
@@ -78,4 +81,11 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
+
+
 }

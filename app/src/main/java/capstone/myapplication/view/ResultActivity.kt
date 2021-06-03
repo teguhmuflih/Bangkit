@@ -4,11 +4,11 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import androidx.appcompat.app.AppCompatActivity
+import capstone.myapplication.utils.DummySolutions
+import capstone.myapplication.data.Entity
 import capstone.myapplication.databinding.ActivityResultBinding
 import capstone.myapplication.databinding.ItemResultBinding
 import capstone.myapplication.tflite.Classifier
-import java.lang.Exception
-import java.sql.Connection
 
 class ResultActivity : AppCompatActivity() {
 
@@ -45,9 +45,24 @@ class ResultActivity : AppCompatActivity() {
 
         val titleResult = result.get(0).title
 
+        var solution: Entity? = null
+
+
+
         runOnUiThread {
             itemBinding.textViewResult.text = titleResult
+
+            for (solutionEntity in DummySolutions.generateDummmySolutions()) {
+                if (solutionEntity.label == titleResult) {
+                    solution = solutionEntity
+                }
+            }
+
+            itemBinding.resultSolution.text = solution?.solution.toString()
+
         }
+
+
     }
 
 

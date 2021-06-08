@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_list.xml",
+        "source": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\src\\main\\res\\layout\\item_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_camera.xml",
+        "source": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\src\\main\\res\\layout\\fragment_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_article.xml",
+        "source": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\src\\main\\res\\layout\\activity_article.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_result.xml",
+        "source": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\src\\main\\res\\layout\\activity_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_screen.xml",
+        "source": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_weather.xml",
+        "source": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\src\\main\\res\\layout\\item_weather.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_result.xml",
+        "source": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\src\\main\\res\\layout\\item_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\user\\Downloads\\Compressed\\Bangkit-master\\Mobile Development\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]
